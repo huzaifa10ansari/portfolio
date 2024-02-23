@@ -1,0 +1,211 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Georgia'; 
+}
+/*CSS VARIABLES*/
+:root {
+  --text-color: #333;
+  --text-color-2: #999;
+  --text-color-3: #555;
+  --text-color-4: #eee;
+  --white-color: #fff;
+  --border-color:#f34949; 
+}
+ /*
+ background-color: var(--background-color);
+ */
+
+/*CSS UNITS*/
+/*https://www.w3schools.com/cssref/css_units.asp*/
+/*
+
+rem html font-size ke relative
+em parent element font-size ke relative
+
+*/
+
+html{
+	font-size: 16px;
+	/*for rem*/
+}
+/*https://nekocalc.com/px-to-rem-converter*/
+.container{
+	max-width: 1024px;
+	margin:0 auto; 
+}
+#header{
+	background: var(--white-color);
+	width: 100%;
+	padding: 1.25rem 0px;
+}
+.container{
+	max-width: 1180px;
+	margin:0 auto;
+}
+.clearfix::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+#logo{
+	width: 30%;
+	float: left;
+}
+#navigation{
+	float: right;
+	width: 40%;
+}
+
+#navigation ul li a{
+	text-decoration: none;
+	color: var(--text-color);
+	font-size: 1.125rem;
+}
+.banner img{
+	width: 100%;
+	border-bottom: 5px solid var(--border-color);
+}
+.menu-container{
+	position: relative;
+	text-align: center;
+	top: -0.25rem;
+}
+.menu-container h2{
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+	top: 0.938rem;
+	color: white;
+}
+
+.product-container{
+	margin-top: 3rem;
+}
+.product-container .sub-product-container{
+	float: left;
+	width: 43%;
+	margin-bottom: 2rem;
+}
+.product-container .sub-product-container p{
+	margin-top: 1.8rem;
+	color: var(--text-color-2);
+}
+.product-container .sub-product-container:nth-child(even){
+	margin-left: 5rem;
+}
+.product-container .sub-product-container:nth-child(odd){
+	margin-right: 5rem;
+}
+.prod-item-1{
+	float: left;
+	width: 90%;
+	position: relative;
+}
+.prod-item-1::after{
+	content: '';
+	position: absolute;
+    top: 0.563rem;
+    width: 90%;
+    border: 1px solid #9999993b;
+    z-index: -1;
+    left: 2rem;
+}
+.prod-item-1 h3{
+	color: var(--text-color-3);
+	display: inline-block;
+	background-color: white;
+	padding-right: 0.813rem;
+}
+.prod-item-2{
+	float: right;
+	width: 10%;
+}
+.prod-item-2 h4{
+	color: var(--text-color-3);
+}
+.dish-container{
+	margin-top:4.375rem; 
+	margin-bottom:4.375rem; 
+}
+.dish-container .dish-items{
+	width: 23%;
+	float: left;
+	margin-right: 1.938rem;
+}
+.dish-container .dish-items:nth-child(4){
+	margin-right: 0px;
+}
+.dish-container .dish-items img{
+	width: 100%;
+}
+.dish-sub-items{
+	margin-top: 0.313rem;
+}
+.dish-sub-items h3{
+	width: 60%;
+	float: left;
+}
+.dish-sub-items h4{
+	width: 12%;
+	float: right;
+}
+#footer{
+	background-color: #3b3b3b;
+	padding: 3.125rem 1.875rem;
+}
+#footer h3{
+	color: var(--text-color-4);
+	font-size: 1.125rem;
+	line-height: 2.063rem;
+}
+#footer a{
+	color: var(--text-color-4);
+	font-size: 1.125rem;
+	display: block;
+    line-height: 2.063rem;
+    text-decoration: none;
+}
+#footer p{
+	color: var(--text-color-4);
+	font-size: 1rem;
+}
+.footer-items{
+	float: left;
+	width: 25%;
+}
+.footer-items-3{
+	width: 30%;
+}
+.footer-items-4{
+	width: 20%;
+}
+.footer-items-4 img{
+	margin-bottom: 1.875rem;
+}
+
+
+/*
+https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
+480px: Mobile devices
+768px: iPads, Tablets
+1024px: Small screens, laptops
+1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+
+*/
+
+#navigation ul li {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+}
+
+
+@media(min-width:540px){
+	#navigation ul li {
+	    float: left;
+	    margin-right: 1.688rem;
+	    list-style: none;
+	}
+}

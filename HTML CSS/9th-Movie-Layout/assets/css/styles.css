@@ -1,0 +1,274 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Asap', sans-serif;
+}
+:root{
+	--yellow-color:#f6d200;
+}
+body{
+	background: #ededed;
+}
+header{
+	height: 21.875rem;
+	background: black;
+	display: flex;
+	align-items:center; 
+	color:white;
+	justify-content: center;
+}
+header h1{
+    font-weight: 100;
+}
+header ul{
+	display: flex;
+	justify-content: center;
+}
+header ul li{
+	list-style-type: none;
+	margin-right: 0.625rem;
+	color: var(--yellow-color);
+	font-style: italic;
+}
+nav{
+	display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+}
+nav div{
+	flex-grow: 1;
+	background: var(--yellow-color);
+	height: 40px;
+	padding-top: 10px;
+}
+nav div:hover{
+	background: black;
+	color: var(--yellow-color);
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+nav p{
+	font-weight: 600;
+	text-transform: capitalize;
+}
+section{
+	display: flex;
+	padding:10px 20px;
+	justify-content: space-between; 
+	margin-top: 20px;
+}
+article{
+	flex-basis: 76%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+article img{
+	width: 100%;
+}
+aside{
+	flex-basis: 20%;
+}
+aside .widget{
+	background: white;
+	padding: 36px 20px;
+	margin-bottom: 25px;
+}
+aside .widget h3{
+	font-size: 19px;
+	margin-bottom: 20px;
+}
+aside .widget h4{
+	font-size: 17px;
+	padding-left: 10px;
+	margin-bottom: 4px;
+}
+
+.movie-collection{
+	margin-bottom: 40px;
+}
+.movie-collection .title{
+	background: var(--yellow-color);
+	color:black;
+	text-align: center;
+	font-size: 20px;
+    font-weight: 700;
+	padding: 20px 0px;
+    margin-top: -4px;
+}
+.movie-collection .description{
+	background: white;
+	padding:25px; 
+}
+.movie-half-width{
+	flex-basis: 49%;
+}
+.movie-third-width{
+	flex-basis: 31%;
+}
+#sports-movies-container {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.use-full-heading{
+	font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.sports-movies{
+	display: flex;
+	margin-bottom: 15px;
+}
+.sports-movies div:nth-child(1){
+	flex-basis: 36%;
+}
+
+.sports-movies div:nth-child(2){
+	flex-basis: 64%;
+	background: black;
+	color: white;
+	display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    padding-left: 40px;
+}
+.sports-movie-description h2{
+	text-align: left;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.sports-movie-description p,.sports-movie-description a{
+	font-weight: 600;
+}
+.sports-movie-description a{
+	color: white;
+}
+#sports-movie-2nd{
+	flex-direction: row-reverse;
+}
+#download-now-container{
+	width: 100%;
+}
+#download-now-second-div{
+	display: flex;
+	margin-top: -4px;
+}
+#download-first-item{
+	background: black;
+	color: white;
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#download-first-item .fa-cloud-download-alt{
+	font-size: 40px;
+}
+#download-second-item{
+	background: white;
+	flex-grow: 2;
+	padding-left: 40px;
+	padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#download-third-item{
+	background: var(--yellow-color);
+	color: black;
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#download-third-item h3{
+	font-size: 40px;
+}
+#genre{
+	display: flex;
+	margin-bottom: 20px;
+}
+#genre div:nth-child(1){
+	flex-basis: 20%;
+}
+#cast{
+	display: flex;
+}
+#cast div:nth-child(1){
+	flex-basis: 20%;
+}
+#cast img{
+	width: 50px;
+	border-radius: 50%;
+}
+#gallery-container{
+	width: 100%;
+	margin-top: 25px;
+}
+#gallery-imgs{
+	display: flex;
+	flex-wrap: wrap;
+}
+.gallery-img{
+	flex-grow: 1;
+	height: 250px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+}
+.gallery-img img{
+	width: 100%;
+	object-fit: cover;
+	height: 250px;
+}
+.gallery-img:nth-child(4n+1){
+	flex-basis: 260px;
+}
+.gallery-img:nth-child(4n+2){
+	flex-basis: 325px;
+}
+.gallery-img:nth-child(4n+3){
+	flex-basis: 180px;
+}
+.gallery-img:nth-child(4n+4){
+	flex-basis: 380px;
+}
+
+footer{
+	background: black;
+	color: white;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 80px;
+	padding: 30px 0px;
+}
+
+/*LAPTOPS*/
+@media(max-width:980px){
+	section{
+		flex-direction: column;
+	}
+}
+/*MOBILE*/
+@media(max-width: 580px){
+	nav{
+		flex-direction: column;
+		height: auto;
+		align-items: stretch;
+	}
+	.movie-half-width{
+		flex-basis: 100%;
+	}
+	.movie-third-width{
+		flex-basis: 100%;
+	}
+	#download-now-second-div{
+		flex-direction: column;
+	}
+}

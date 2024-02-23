@@ -1,0 +1,7 @@
+Steps
+1- Define Dom Ui Vars
+2- load All Events Listeners
+3- task create and save in localstorage
+4- remove task from dom & localstorage
+5- clear tasks from dom & remove tasks from localstorage
+6- filter tasks from dom

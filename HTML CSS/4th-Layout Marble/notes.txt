@@ -1,0 +1,7 @@
+responsive layout
+https://www.w3schools.com/css/css_rwd_viewport.asp
+
+
+What is a Media Query?
+
+

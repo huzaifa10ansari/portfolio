@@ -1,0 +1,24 @@
+control+shift+p = for install package
+search install package (wait)
+search emmet 
+
+
+max-width
+lets suppose 
+
+//it will render when you decrease the size 
+
+//it will apply conditionaly in mobile
+@media(max-width:540px){
+	.random{
+	margin:10px;
+	}
+}
+
+
+//it will apply all sizes but not in mobile
+@media(min-width:540px){
+	.random{
+	margin:10px;
+	}
+}
